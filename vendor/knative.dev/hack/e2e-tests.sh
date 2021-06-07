@@ -130,7 +130,7 @@ function fail_test() {
 SKIP_TEARDOWNS=0
 SKIP_ISTIO_ADDON=0
 E2E_SCRIPT=""
-CLOUD_PROVIDER="gke"
+CLOUD_PROVIDER="kind"
 
 # Parse flags and initialize the test cluster.
 function initialize() {
