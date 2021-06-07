@@ -127,7 +127,7 @@ function create_kind_test_cluster() {
   local -n _custom_flags=$1
   local -n _test_command=$2
 
-  kubetest2 kind "${_custom_flags[@]}" --up --cluster-name="kind" --down --test=exec -- "${_test_command[@]}"
+  kubetest2 kind "${_custom_flags[@]}" --up --down --test=exec -- "${_test_command[@]}"
 }
 
 # Create a GKE test cluster with kubetest2 and run the test command.
